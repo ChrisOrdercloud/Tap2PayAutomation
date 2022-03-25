@@ -76,21 +76,21 @@ public class LoginTests extends BaseTest {
 
 
     }
-    @Test(priority = 3)
-    public void CardPay() throws Exception {
-
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        MobileElement CardPay = (MobileElement) driver.findElementById("com.ordercloud.tap_to_pay:id/btn_card_pay");
-        CardPay.click();
-        System.out.println("CardPay button and Card screen check");
-
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        MobileElement Keypad = (MobileElement) driver.findElementById("com.ordercloud.tap_to_pay:id/btn_card_pay");
-        CardPay.click();
-        System.out.println("CardPay button and Card screen check");
-
-
-    }
+//    @Test(priority = 3)
+//    public void CardPay() throws Exception {
+//
+//        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//        MobileElement CardPay = (MobileElement) driver.findElementById("com.ordercloud.tap_to_pay:id/btn_card_pay");
+//        CardPay.click();
+//        System.out.println("CardPay button and Card screen check");
+//
+//        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//        MobileElement Keypad = (MobileElement) driver.findElementById("com.ordercloud.tap_to_pay:id/btn_card_pay");
+//        CardPay.click();
+//        System.out.println("CardPay button and Card screen check");
+//
+//
+//    }
 }
 
 

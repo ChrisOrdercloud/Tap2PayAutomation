@@ -5,19 +5,19 @@
       <![CDATA[This is the sample screenshot]]>
     </line>
     <line>
-      <![CDATA[<a href='/Users/ordercloud/IdeaProjects/TestTap2Pay/Screenshots/Android_9.0_Pixel 4/2022-03-15-13-54-41/LoginTests/CardPay.png'> <img src='/Users/ordercloud/IdeaProjects/TestTap2Pay/Screenshots/Android_9.0_Pixel 4/2022-03-15-13-54-41/LoginTests/CardPay.png' height='680' width='350'/> </a>]]>
+      <![CDATA[<a href='/Users/ordercloud/IdeaProjects/Tap2PayAutomation/Screenshots/Android_9.0_Pixel 4/2022-03-16-08-30-03/LoginTests/CardPay.png'> <img src='/Users/ordercloud/IdeaProjects/Tap2PayAutomation/Screenshots/Android_9.0_Pixel 4/2022-03-16-08-30-03/LoginTests/CardPay.png' height='680' width='350'/> </a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-03-15T13:54:41 SAST" name="All Test Suite" finished-at="2022-03-15T13:55:05 SAST" duration-ms="23507">
+  <suite started-at="2022-03-16T08:30:03 SAST" name="All Test Suite" finished-at="2022-03-16T08:30:25 SAST" duration-ms="22092">
     <groups>
     </groups>
-    <test started-at="2022-03-15T13:54:41 SAST" name="/Users/ordercloud/IdeaProjects/TestTap2Pay/testng.xml" finished-at="2022-03-15T13:55:05 SAST" duration-ms="23507">
+    <test started-at="2022-03-16T08:30:03 SAST" name="/Users/ordercloud/IdeaProjects/TestTap2Pay/testng.xml" finished-at="2022-03-16T08:30:25 SAST" duration-ms="22092">
       <class name="com.qa.tests.LoginTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:54:40 SAST" name="beforeSuite" finished-at="2022-03-15T13:54:41 SAST" duration-ms="1362" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:02 SAST" name="beforeSuite" finished-at="2022-03-16T08:30:03 SAST" duration-ms="1459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:54:41 SAST" name="beforeTest" finished-at="2022-03-15T13:54:47 SAST" duration-ms="5847" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:03 SAST" name="beforeTest" finished-at="2022-03-16T08:30:09 SAST" duration-ms="5778" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:54:47 SAST" name="beforeMethod" finished-at="2022-03-15T13:54:47 SAST" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:09 SAST" name="beforeMethod" finished-at="2022-03-16T08:30:09 SAST" duration-ms="145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,15 +49,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Walkthrough()[pri:1, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:54:47 SAST" name="Walkthrough" finished-at="2022-03-15T13:54:55 SAST" duration-ms="8188" status="PASS">
+        <test-method signature="Walkthrough()[pri:1, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:09 SAST" name="Walkthrough" finished-at="2022-03-16T08:30:16 SAST" duration-ms="7401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Walkthrough -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:54:55 SAST" name="afterMethod" finished-at="2022-03-15T13:54:55 SAST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:16 SAST" name="afterMethod" finished-at="2022-03-16T08:30:16 SAST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:54:55 SAST" name="beforeMethod" finished-at="2022-03-15T13:54:55 SAST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:16 SAST" name="beforeMethod" finished-at="2022-03-16T08:30:16 SAST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,15 +68,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="PermissionsAccept()[pri:2, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:54:55 SAST" name="PermissionsAccept" finished-at="2022-03-15T13:54:58 SAST" duration-ms="2602" status="PASS">
+        <test-method signature="PermissionsAccept()[pri:2, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:16 SAST" name="PermissionsAccept" finished-at="2022-03-16T08:30:19 SAST" duration-ms="2492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PermissionsAccept -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:54:58 SAST" name="afterMethod" finished-at="2022-03-15T13:54:58 SAST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:19 SAST" name="afterMethod" finished-at="2022-03-16T08:30:19 SAST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:54:58 SAST" name="beforeMethod" finished-at="2022-03-15T13:54:58 SAST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:19 SAST" name="beforeMethod" finished-at="2022-03-16T08:30:19 SAST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,7 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="CardPay()[pri:3, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:54:58 SAST" name="CardPay" finished-at="2022-03-15T13:55:04 SAST" duration-ms="5918" status="FAIL">
+        <test-method signature="CardPay()[pri:3, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:19 SAST" name="CardPay" finished-at="2022-03-16T08:30:24 SAST" duration-ms="5466" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -96,7 +96,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'Johans-MBP-3.localdomain', ip: 'fe80:0:0:0:14f7:f836:aa08:7f67%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: /Users/ordercloud/IdeaProje..., appActivity: com.ordercloud.tap_to_pay.u..., appPackage: com.ordercloud.tap_to_pay, automationName: UIAutomator2, databaseEnabled: false, desired: {app: /Users/ordercloud/IdeaProje..., appActivity: com.ordercloud.tap_to_pay.u..., appPackage: com.ordercloud.tap_to_pay, automationName: UIAutomator2, deviceName: Pixel 4, platformName: android, platformVersion: 9.0, udid: emulator-5554}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_arm, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 135, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: a0a7b88d-91ce-4bb6-82a8-9e843c209bda
+Session ID: 28132cfe-952b-4121-9e3d-49777d9f8cf6
 *** Element info: {Using=id, value=com.ordercloud.tap_to_pay:id/btn_card_pay}]]>
             </message>
             <full-stacktrace>
@@ -106,7 +106,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'Johans-MBP-3.localdomain', ip: 'fe80:0:0:0:14f7:f836:aa08:7f67%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: /Users/ordercloud/IdeaProje..., appActivity: com.ordercloud.tap_to_pay.u..., appPackage: com.ordercloud.tap_to_pay, automationName: UIAutomator2, databaseEnabled: false, desired: {app: /Users/ordercloud/IdeaProje..., appActivity: com.ordercloud.tap_to_pay.u..., appPackage: com.ordercloud.tap_to_pay, automationName: UIAutomator2, deviceName: Pixel 4, platformName: android, platformVersion: 9.0, udid: emulator-5554}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_arm, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 135, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: a0a7b88d-91ce-4bb6-82a8-9e843c209bda
+Session ID: 28132cfe-952b-4121-9e3d-49777d9f8cf6
 *** Element info: {Using=id, value=com.ordercloud.tap_to_pay:id/btn_card_pay}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -166,19 +166,19 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
               <![CDATA[This is the sample screenshot]]>
             </line>
             <line>
-              <![CDATA[<a href='/Users/ordercloud/IdeaProjects/TestTap2Pay/Screenshots/Android_9.0_Pixel 4/2022-03-15-13-54-41/LoginTests/CardPay.png'> <img src='/Users/ordercloud/IdeaProjects/TestTap2Pay/Screenshots/Android_9.0_Pixel 4/2022-03-15-13-54-41/LoginTests/CardPay.png' height='680' width='350'/> </a>]]>
+              <![CDATA[<a href='/Users/ordercloud/IdeaProjects/Tap2PayAutomation/Screenshots/Android_9.0_Pixel 4/2022-03-16-08-30-03/LoginTests/CardPay.png'> <img src='/Users/ordercloud/IdeaProjects/Tap2PayAutomation/Screenshots/Android_9.0_Pixel 4/2022-03-16-08-30-03/LoginTests/CardPay.png' height='680' width='350'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- CardPay -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:55:04 SAST" name="afterMethod" finished-at="2022-03-15T13:55:04 SAST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:25 SAST" name="afterMethod" finished-at="2022-03-16T08:30:25 SAST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:55:04 SAST" name="afterTest" finished-at="2022-03-15T13:55:05 SAST" duration-ms="319" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:25 SAST" name="afterTest" finished-at="2022-03-16T08:30:25 SAST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-15T13:55:05 SAST" name="afterSuite" finished-at="2022-03-15T13:55:05 SAST" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.qa.tests.LoginTests@32c4e8b2]" started-at="2022-03-16T08:30:25 SAST" name="afterSuite" finished-at="2022-03-16T08:30:25 SAST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
