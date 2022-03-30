@@ -5,8 +5,10 @@ import com.qa.pages.LoginPage;
 import com.qa.pages.WalkthroughScreen;
 import io.appium.java_client.MobileElement;
 import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.testng.annotations.*;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
@@ -18,27 +20,27 @@ public class LoginTests extends BaseTest {
     InputStream datais;
     JSONObject loginUsers;
 
-    //  @BeforeClass
-//    public void beforeclass() throws IOException {
-//        try {
-//            String dataFileName = "data/loginUsers.json";
-//            datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
-//            JSONTokener tokener = new JSONTokener(datais);
-//            loginUsers = new JSONObject(tokener);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            throw e;
-//        } finally {
-//            if (datais != null) {
-//                datais.close();
-//            }
-//        }
-//
-//    }
+      @BeforeClass
+    public void beforeclass() throws IOException {
+        try {
+            String dataFileName = "data/loginUsers.json";
+            datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
+            JSONTokener tokener = new JSONTokener(datais);
+            loginUsers = new JSONObject(tokener);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        } finally {
+            if (datais != null) {
+                datais.close();
+            }
+        }
 
-//    @AfterClass
-//    public void afterClass() {
-//    }
+    }
+
+    @AfterClass
+    public void afterClass() {
+    }
 
     @BeforeMethod
     public void beforeMethod(Method m) {

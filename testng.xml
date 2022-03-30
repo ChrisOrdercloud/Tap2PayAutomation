@@ -7,9 +7,9 @@
     <!--    To run on multiple devices duplicate code and change values-->
     <test verbose="2" preserve-order="true" name="/Users/ordercloud/IdeaProjects/TestTap2Pay/testng.xml">
 
-        <parameter name="platformName" value="Android"/>
-        <parameter name="platformVersion" value="9.0"/>
-        <parameter name="deviceName" value="Pixel 4"/>
+<!--        <parameter name="platformName" value="Android"/>-->
+<!--        <parameter name="platformVersion" value="9.0"/>-->
+<!--        <parameter name="deviceName" value="Pixel 4"/>-->
 
         <classes>
 
