@@ -20,23 +20,23 @@ public class LoginTests extends BaseTest {
     InputStream datais;
     JSONObject loginUsers;
 
-      @BeforeClass
-    public void beforeclass() throws IOException {
-        try {
-            String dataFileName = "data/loginUsers.json";
-            datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
-            JSONTokener tokener = new JSONTokener(datais);
-            loginUsers = new JSONObject(tokener);
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-        } finally {
-            if (datais != null) {
-                datais.close();
-            }
-        }
-
-    }
+//      @BeforeClass
+//    public void beforeclass() throws IOException {
+//        try {
+//            String dataFileName = "data/loginUsers.json";
+//            datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
+//            JSONTokener tokener = new JSONTokener(datais);
+//            loginUsers = new JSONObject(tokener);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            throw e;
+//        } finally {
+//            if (datais != null) {
+//                datais.close();
+//            }
+//        }
+//
+//    }
 
     @AfterClass
     public void afterClass() {
