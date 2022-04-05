@@ -9,6 +9,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.html5.Location;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -21,8 +22,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Properties;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -43,6 +43,7 @@ public class BaseTest {
     public BaseTest() {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 
+
     }
     @BeforeSuite
     public void setUpAppium() throws MalformedURLException {
@@ -50,6 +51,11 @@ public class BaseTest {
         final String URL_STRING = "http://127.0.0.1:4723/wd/hub";
 
         URL url = new URL(URL_STRING);
+       // driver.setLocation(new Location(-33.9188, 18.4233, 10));
+        TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
+        TimeZone.setDefault(TimeZone.getTimeZone("Africa/Harare"));
+
+
 
         //Use a empty DesiredCapabilities object
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -58,6 +64,13 @@ public class BaseTest {
 
         //Use a higher value if your mobile elements take time to show up
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+
+        class TimeZoneTest {
+            public void main(String[] args) {
+                System.setProperty("user.timezone", "GMT+2");
+                System.out.println(new Date());
+            }
+        }
     }
 //    @BeforeSuite
 //    public void beforeSuite(){

@@ -3,5 +3,6 @@ com/qa/pages/LoginPage.class
 com/qa/tests/LoginTests.class
 com/qa/utils/TestUtils.class
 com/qa/pages/PermissionsScreen.class
+com/qa/BaseTest$1TimeZoneTest.class
 com/qa/BaseTest.class
 com/qa/listeners/TestListener.class
