@@ -4,9 +4,12 @@ import com.qa.BaseTest;
 import com.qa.pages.LoginPage;
 
 import io.appium.java_client.MobileElement;
+import org.openqa.selenium.html5.Location;
 import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
+import java.time.ZonedDateTime;
+import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 
@@ -16,7 +19,10 @@ public class LoginTests extends BaseTest {
 
     @BeforeMethod
     public void beforeMethod(Method m) {
+        driver.setLocation(new Location(-33.9188, 18.4233, 00));
+        driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
         loginPage = new LoginPage(driver);
+
     }
 
     @Test(priority = 1)

@@ -17,20 +17,20 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public abstract class BaseTest {
-//    protected static final int NATIVE_APP = 0;
+    //    protected static final int NATIVE_APP = 0;
 //    protected static final int WEBVIEW = 1;
- public static AppiumDriver driver;
+    public static AppiumDriver driver;
     //protected static Properties props;
-   // protected static HashMap<String, String> strings = new HashMap<String, String>();
+    // protected static HashMap<String, String> strings = new HashMap<String, String>();
     protected static String dateTime;
 //    private static AppiumDriverLocalService server;
 //
@@ -38,31 +38,64 @@ public abstract class BaseTest {
 //    InputStream stringsis;
 //    TestUtils utils;
 
-  //  static Logger log = LogManager.getLogger(BaseTest.class.getName());
+    //  static Logger log = LogManager.getLogger(BaseTest.class.getName());
 
-//    public BaseTest() {
+    //    public BaseTest() {
 //        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 //
 //    }
+    public void setEmulatorTime() {
+
+        try {
+            Process rc = Runtime.getRuntime().exec("adb shell date --set=");
+            System.out.println("command execution done");
+
+            InputStream is = rc.getInputStream();
+            InputStreamReader isr = new InputStreamReader(is);
+            BufferedReader br = new BufferedReader(isr);
+            String line;
+            while ((line = br.readLine()) != null) {
+                if (line.length() > 0) {
+                    line += br.readLine();
+                    System.out.println("line: " + line);
+                    if (line.contains("Command Output we can check")) {
+                        System.out.println(" Emulator time set");
+                    }
+                }
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+        }
+    }
+
     @BeforeSuite
     public void setUpAppium() throws MalformedURLException {
+        //TimeZone.setDefault(TimeZone.getTimeZone("GMT+02:00"));
+        System.out.println("Hello test123");
+        setEmulatorTime();
 
         final String URL_STRING = "http://127.0.0.1:4723/wd/hub";
 
+        //driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         URL url = new URL(URL_STRING);
-      //  driver.setLocation(new Location(-33.9188, 18.4233, 10));
 
-        TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
-        TimeZone.setDefault(TimeZone.getTimeZone("Africa/Harare"));
+
         //Use a empty DesiredCapabilities object
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         driver = new AndroidDriver<MobileElement>(url, capabilities);
 
         //Use a higher value if your mobile elements take time to show up
+        // TimeZone.setDefault(TimeZone.getTimeZone("Africa/Harare"));
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+        // capabilities.setCapability("timezone","GMT+2:00");
+//        capabilities.setCapability("locale", "en_ZA");
 
-      }
+
+    }
 //    @BeforeSuite
 //    public void beforeSuite(){
 //        //Starts Appium server programmatically (Run command to clear port if port is already in use/  Isof -P | grep ':4723' | awk '{print @2}' | xargs kill -9)
