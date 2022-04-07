@@ -25,24 +25,23 @@ import java.net.URL;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class BaseTest {
-    protected static final int NATIVE_APP = 0;
-    protected static final int WEBVIEW = 1;
-    protected static AppiumDriver driver;
-    protected static Properties props;
-    protected static HashMap<String, String> strings = new HashMap<String, String>();
+public abstract class BaseTest {
+//    protected static final int NATIVE_APP = 0;
+//    protected static final int WEBVIEW = 1;
+ public static AppiumDriver driver;
+    //protected static Properties props;
+   // protected static HashMap<String, String> strings = new HashMap<String, String>();
     protected static String dateTime;
-    private static AppiumDriverLocalService server;
+//    private static AppiumDriverLocalService server;
+//
+//    InputStream inputStream;
+//    InputStream stringsis;
+//    TestUtils utils;
 
-    InputStream inputStream;
-    InputStream stringsis;
-    TestUtils utils;
-
-    static Logger log = LogManager.getLogger(BaseTest.class.getName());
+  //  static Logger log = LogManager.getLogger(BaseTest.class.getName());
 
 //    public BaseTest() {
 //        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-//
 //
 //    }
     @BeforeSuite
@@ -53,9 +52,8 @@ public class BaseTest {
         URL url = new URL(URL_STRING);
       //  driver.setLocation(new Location(-33.9188, 18.4233, 10));
 
-
-
-
+        TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
+        TimeZone.setDefault(TimeZone.getTimeZone("Africa/Harare"));
         //Use a empty DesiredCapabilities object
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
@@ -63,14 +61,7 @@ public class BaseTest {
 
         //Use a higher value if your mobile elements take time to show up
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
-        TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
-        TimeZone.setDefault(TimeZone.getTimeZone("Africa/Harare"));
-//        class TimeZoneTest {
-//            public void main(String[] args) {
-//                System.setProperty("user.timezone", "GMT+2");
-//                System.out.println(new Date());
-//            }
-//        }
+
       }
 //    @BeforeSuite
 //    public void beforeSuite(){
@@ -93,13 +84,6 @@ public class BaseTest {
 //        return  AppiumDriverLocalService.buildDefaultService();
 //        }
 
-   // @Parameters({"platformName", "platformVersion", "deviceName"}
-
-//    public void beforeTest(@Optional String platformName, @Optional String platformVersion, @Optional String deviceName) throws IOException {
-//        log.info("This is info massage");
-//        log.error("This is a error massage");
-//        log.debug("This is a debug massage");
-//        log.warn("This is a warning massage");
 //
 //
 //
@@ -147,35 +131,35 @@ public class BaseTest {
 //
 //    }
 
-    public AppiumDriver getDriver() {
-        return driver;
-    }
-
-    public String getDateTime() {
-        return dateTime;
-    }
+//    public AppiumDriver getDriver() {
+//        return driver;
+//    }
+//
+//    public String getDateTime() {
+//        return dateTime;
+//    }
 
     //This might not be used for T2P
-    public void waitForVisibility(MobileElement e) {
-        WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
-        wait.until(ExpectedConditions.visibilityOf(e));
-    }
+//    public void waitForVisibility(MobileElement e) {
+//        WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
+//        wait.until(ExpectedConditions.visibilityOf(e));
+//    }
+//
+//    //Managing the waits, manage driver commands
+//    public void click(MobileElement e) {
+//        waitForVisibility(e);
+//        e.click();
+//    }
 
-    //Managing the waits, manage driver commands
-    public void click(MobileElement e) {
-        waitForVisibility(e);
-        e.click();
-    }
-
-    public void sendKeys(MobileElement e, String txt) {
-        waitForVisibility(e);
-        e.sendKeys(txt);
-    }
-
-    public String getAttribute(MobileElement e, String attribute) {
-        waitForVisibility(e);
-        return e.getAttribute(attribute);
-    }
+//    public void sendKeys(MobileElement e, String txt) {
+//        waitForVisibility(e);
+//        e.sendKeys(txt);
+//    }
+//
+//    public String getAttribute(MobileElement e, String attribute) {
+//        waitForVisibility(e);
+//        return e.getAttribute(attribute);
+//    }
 
 
     @AfterSuite

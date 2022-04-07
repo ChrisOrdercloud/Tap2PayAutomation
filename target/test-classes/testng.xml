@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-<listeners>
-    <listener class-name="com.qa.listeners.TestListener"></listener>
-</listeners>
-    <!--    To run on multiple devices duplicate code and change values-->
-    <test name="login">
+<!--<listeners>-->
+<!--    <listener class-name="com.qa.listeners.TestListener"></listener>-->
+<!--</listeners>-->
 
-<!--        <parameter name="platformName" value="Android"/>-->
-<!--        <parameter name="platformVersion" value="9.0"/>-->
-<!--        <parameter name="deviceName" value="Pixel 4"/>-->
+    <test name="login">
 
         <classes>
 
