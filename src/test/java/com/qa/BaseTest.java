@@ -47,9 +47,9 @@ public abstract class BaseTest {
     public void setEmulatorTime() {
 
         try {
-            Process rc = Runtime.getRuntime().exec("adb shell date --set=");
+            Process rc = Runtime.getRuntime().exec("adb shell date 070415492022.00 ; pm broadcast -a android.intent.action.TIME_SET");
             System.out.println("command execution done");
-
+            System.out.println("Test time set");
             InputStream is = rc.getInputStream();
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader br = new BufferedReader(isr);
@@ -134,9 +134,9 @@ public abstract class BaseTest {
 //            strings = utils.parseStringXML(stringsis);
 //
 //            DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-//            desiredCapabilities.setCapability("platformName", platformName);
-//            desiredCapabilities.setCapability("deviceName", deviceName);
-//            desiredCapabilities.setCapability("automationName", props.getProperty("androidAutomationName"));
+//            desiredCapabilities.setCapability("platformName", Android);
+//            desiredCapabilities.setCapability("deviceName", Pixel 4);
+//            desiredCapabilities.setCapability("automationName", ));
 //            desiredCapabilities.setCapability("appPackage", props.getProperty("androidAppPackage"));
 //            desiredCapabilities.setCapability("appActivity", props.getProperty("androidAppActivity"));
 //

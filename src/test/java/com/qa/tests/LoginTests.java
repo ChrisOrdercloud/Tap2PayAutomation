@@ -19,8 +19,7 @@ public class LoginTests extends BaseTest {
 
     @BeforeMethod
     public void beforeMethod(Method m) {
-        driver.setLocation(new Location(-33.9188, 18.4233, 00));
-        driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+
         loginPage = new LoginPage(driver);
 
     }
