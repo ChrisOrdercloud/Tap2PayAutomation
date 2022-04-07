@@ -38,46 +38,47 @@ public class LoginTests extends BaseTest {
 //
 //    }
 
-    @AfterClass
-    public void afterClass() {
-    }
+//    @AfterClass
+//    public void afterClass() {
+//    }
 
     @BeforeMethod
     public void beforeMethod(Method m) {
         loginPage = new LoginPage();
     }
 
-    @AfterMethod
-    public void afterMethod() {
-    }
+//    @AfterMethod
+//    public void afterMethod() {
+//    }
 
-    @Test(priority = 1)
+    @Test
     public void Walkthrough() throws Exception {
 
-        loginPage.pressWalkthroughBtn();
+      //  loginPage.pressWalkthroughBtn();
         System.out.println("Test walkthrough flow");
 
-    }
-
-    @Test(priority = 2)
-    public void PermissionsAccept() {
-
-        loginPage.PressStartBtn();
-        System.out.println("Tets Start Button");
-
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        MobileElement ContinueBtn = (MobileElement) driver.findElementById("com.ordercloud.tap_to_pay:id/btn_request_permission");
-        System.out.println("Clicking Continue Button to request permission pop-ups");
-        ContinueBtn.click();
-
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        MobileElement AcceptPermission = (MobileElement) driver.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button");
-        System.out.println("Clicking allow Button on permissions");
-        AcceptPermission.click();
-
-
 
     }
+
+//    @Test(priority = 2)
+//    public void PermissionsAccept() {
+//
+//        loginPage.PressStartBtn();
+//        System.out.println("Tets Start Button");
+//
+//        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        MobileElement ContinueBtn = (MobileElement) driver.findElementById("com.ordercloud.tap_to_pay:id/btn_request_permission");
+//        System.out.println("Clicking Continue Button to request permission pop-ups");
+//        ContinueBtn.click();
+//
+//        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//        MobileElement AcceptPermission = (MobileElement) driver.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button");
+//        System.out.println("Clicking allow Button on permissions");
+//        AcceptPermission.click();
+//
+//
+//
+//    }
 //    @Test(priority = 3)
 //    public void CardPay() throws Exception {
 //

@@ -40,20 +40,19 @@ public class BaseTest {
 
     static Logger log = LogManager.getLogger(BaseTest.class.getName());
 
-    public BaseTest() {
-        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-
-
-    }
+//    public BaseTest() {
+//        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+//
+//
+//    }
     @BeforeSuite
     public void setUpAppium() throws MalformedURLException {
 
         final String URL_STRING = "http://127.0.0.1:4723/wd/hub";
 
         URL url = new URL(URL_STRING);
-       // driver.setLocation(new Location(-33.9188, 18.4233, 10));
-        TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
-        TimeZone.setDefault(TimeZone.getTimeZone("Africa/Harare"));
+      //  driver.setLocation(new Location(-33.9188, 18.4233, 10));
+
 
 
 
@@ -64,14 +63,15 @@ public class BaseTest {
 
         //Use a higher value if your mobile elements take time to show up
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
-
-        class TimeZoneTest {
-            public void main(String[] args) {
-                System.setProperty("user.timezone", "GMT+2");
-                System.out.println(new Date());
-            }
-        }
-    }
+        TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
+        TimeZone.setDefault(TimeZone.getTimeZone("Africa/Harare"));
+//        class TimeZoneTest {
+//            public void main(String[] args) {
+//                System.setProperty("user.timezone", "GMT+2");
+//                System.out.println(new Date());
+//            }
+//        }
+      }
 //    @BeforeSuite
 //    public void beforeSuite(){
 //        //Starts Appium server programmatically (Run command to clear port if port is already in use/  Isof -P | grep ':4723' | awk '{print @2}' | xargs kill -9)
@@ -93,8 +93,7 @@ public class BaseTest {
 //        return  AppiumDriverLocalService.buildDefaultService();
 //        }
 
-   // @Parameters({"platformName", "platformVersion", "deviceName"})
-    @BeforeTest
+   // @Parameters({"platformName", "platformVersion", "deviceName"}
 
 //    public void beforeTest(@Optional String platformName, @Optional String platformVersion, @Optional String deviceName) throws IOException {
 //        log.info("This is info massage");
@@ -179,8 +178,8 @@ public class BaseTest {
     }
 
 
-    @AfterTest
-    public void afterTest() {
+    @AfterSuite
+    public void afterSuite() {
         driver.quit();
     }
 
