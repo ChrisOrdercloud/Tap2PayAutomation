@@ -3,5 +3,6 @@
 /Users/ordercloud/IdeaProjects/Tap2PayAutomation/src/test/java/com/qa/utils/TestUtils.java
 /Users/ordercloud/IdeaProjects/Tap2PayAutomation/src/test/java/com/qa/pages/PermissionsPage.java
 /Users/ordercloud/IdeaProjects/Tap2PayAutomation/src/test/java/com/qa/BaseTest.java
+/Users/ordercloud/IdeaProjects/Tap2PayAutomation/src/test/java/com/qa/tests/Keypad.java
 /Users/ordercloud/IdeaProjects/Tap2PayAutomation/src/test/java/com/qa/tests/LoginTests.java
 /Users/ordercloud/IdeaProjects/Tap2PayAutomation/src/test/java/com/qa/pages/WalkthroughPage.java

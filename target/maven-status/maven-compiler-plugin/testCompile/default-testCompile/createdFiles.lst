@@ -1,5 +1,6 @@
 com/qa/pages/LoginPage.class
 com/qa/tests/LoginTests.class
+com/qa/tests/Keypad.class
 com/qa/utils/TestUtils.class
 com/qa/pages/base/BasePage.class
 com/qa/BaseTest.class
