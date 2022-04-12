@@ -15,10 +15,8 @@ public class LoginPage extends BasePage {
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[3]")
     private MobileElement WalkthroughBtn;
 
-
     @AndroidFindBy (id = "com.ordercloud.tap_to_pay:id/btn_finish")
     private MobileElement Startbtn;
-
 
     public LoginPage pressWalkthroughBtn() {
         click(WalkthroughBtn);
@@ -32,7 +30,6 @@ public class LoginPage extends BasePage {
     public void click(MobileElement e) {
         waitForVisibility(e);
         e.click();
-
 
     }
     public void waitForVisibility(MobileElement e) {
