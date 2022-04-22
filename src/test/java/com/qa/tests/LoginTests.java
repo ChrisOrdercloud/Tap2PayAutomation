@@ -3,6 +3,7 @@ package com.qa.tests;
 import com.qa.BaseTest;
 import com.qa.pages.LoginPage;
 import io.appium.java_client.MobileElement;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
@@ -31,9 +32,12 @@ public class LoginTests extends BaseTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         MobileElement ContinueBtn = (MobileElement) driver.findElementById("com.ordercloud.tap_to_pay:id/btn_request_permission");
         ContinueBtn.click();
+     //   Assert.assertTrue(ContinueBtn.isDisplayed());
+
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         MobileElement AcceptPermission = (MobileElement) driver.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button");
         AcceptPermission.click();
+        //Assert.assertTrue(AcceptPermission.isDisplayed());
     }
 }
 

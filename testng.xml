@@ -5,7 +5,7 @@
     <test name="login">
         <classes>
             <class name="com.qa.tests.LoginTests"/>
-            <class name="com.qa.tests.KeypadTests"/>
+            <class name="com.qa.tests.CalculatorTests"/>
         </classes>
     </test>
 
