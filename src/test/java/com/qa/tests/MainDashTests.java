@@ -1,9 +1,7 @@
 package com.qa.tests;
 
 import com.qa.BaseTest;
-import com.qa.pages.LoginPage;
 import com.qa.pages.MainDashPage;
-import com.qa.pages.base.BasePage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
