@@ -2,6 +2,7 @@ package com.qa.tests;
 
 import com.qa.BaseTest;
 import com.qa.pages.MainDashPage;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,9 +17,13 @@ public class MainDashTests extends BaseTest {
         mainDashPage = new MainDashPage(driver);
     }
 
-    @Test(priority = 1)
-    public void Cardpay() throws Exception {
-   Cardpay();
-    }
+    //    @Test(priority = 1)
+//    public void Cardpay() throws Exception {
+//   Cardpay();
+//    }
+//    @Test(priority = 1)
+//    public void checkElements() throws Exception {
+//        Assert.assertEqual;
+//    }
 }
 

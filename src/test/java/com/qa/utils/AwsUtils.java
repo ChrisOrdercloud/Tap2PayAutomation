@@ -7,7 +7,7 @@ public class AwsUtils {
     public static void setEmulatorTime() {
 
         try {
-            Process rc = Runtime.getRuntime().exec("adb shell date 070415492022.00 ; pm broadcast -a android.intent.action.TIME_SET");
+            Process rc = Runtime.getRuntime().exec("adb shell date 220415152022.00 ; pm broadcast -a android.intent.action.TIME_SET");
             System.out.println("command execution done");
             System.out.println("Test time set");
             InputStream is = rc.getInputStream();

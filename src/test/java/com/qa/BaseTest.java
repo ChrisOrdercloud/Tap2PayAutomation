@@ -22,7 +22,7 @@ public abstract class BaseTest {
     @BeforeSuite
     public void setUpAppium() throws MalformedURLException {
         //* Switch between AWS and local while developing
-      //  appiumSetup();
+     // appiumSetup();
         localSetup();
     }
 //* This sets the local variables while developing,
@@ -50,29 +50,6 @@ public abstract class BaseTest {
         driver = new AndroidDriver<MobileElement>(url, capabilities);
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
     }
-
-
-//*         This might not be used for T2P
-////    public void waitForVisibility(MobileElement e) {
-////        WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
-////        wait.until(ExpectedConditions.visibilityOf(e));
-////    }
-////
-////    //Managing the waits, manage driver commands
-////    public void click(MobileElement e) {
-////        waitForVisibility(e);
-////        e.click();
-////    }
-//
-////    public void sendKeys(MobileElement e, String txt) {
-////        waitForVisibility(e);
-////        e.sendKeys(txt);
-////    }
-////
-////    public String getAttribute(MobileElement e, String attribute) {
-////        waitForVisibility(e);
-////        return e.getAttribute(attribute);
-////    }
 
     @AfterSuite
     public void afterSuite() {

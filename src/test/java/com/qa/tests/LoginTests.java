@@ -13,6 +13,7 @@ public class LoginTests extends BaseTest {
 
     LoginPage loginPage;
 
+
     @BeforeMethod
     public void beforeMethod(Method m) {
 
@@ -22,22 +23,22 @@ public class LoginTests extends BaseTest {
     @Test(priority = 1)
     public void Walkthrough() throws Exception {
         loginPage.pressWalkthroughBtn();
-    }
+        }
+
 
     @Test(priority = 2)
     public void PermissionsAccept() {
 
         loginPage.pressStartBtn();
-
+      //  Assert.assertEquals(loginPage.getStartBtnTxt(), "START");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         MobileElement ContinueBtn = (MobileElement) driver.findElementById("com.ordercloud.tap_to_pay:id/btn_request_permission");
         ContinueBtn.click();
-     //   Assert.assertTrue(ContinueBtn.isDisplayed());
 
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         MobileElement AcceptPermission = (MobileElement) driver.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button");
         AcceptPermission.click();
-        //Assert.assertTrue(AcceptPermission.isDisplayed());
+
     }
 }
 

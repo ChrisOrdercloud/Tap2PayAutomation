@@ -9,14 +9,20 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage extends BasePage {
-    public LoginPage(AppiumDriver driver) {
-        super(driver);
-    }
+
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[3]")
     private MobileElement WalkthroughBtn;
 
     @AndroidFindBy (id = "com.ordercloud.tap_to_pay:id/btn_finish")
     private MobileElement Startbtn;
+
+    public LoginPage(AppiumDriver driver) {
+        super(driver);
+    }
+
+    public String getStartBtnTxt(){
+        return Startbtn.getText();
+    }
 
     public LoginPage pressWalkthroughBtn() {
         click(WalkthroughBtn);
