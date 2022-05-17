@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Shop2ShopNativeAutomation" />
         <module name="TestTap2Pay" />
+        <module name="Tap2PayAutomation" />
       </profile>
     </annotationProcessing>
   </component>
